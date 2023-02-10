@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - npm install
+      - echo "install phase"
+  build:
+    commands:
+      - npm test
+      - echo "build phase"
+artifacts:
+  files:
+    - '**/*'
